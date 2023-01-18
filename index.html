@@ -20,6 +20,8 @@
             </ol>
             <p>
                 <a href="./media/kadr.jpg">Pobierz obraz</a>
+            </p>
+            <p>
                 <a href="https://repertuar-kin.pl" target="_blank">Sprawdź repertuar kin</a>
             </p>
         </div>
@@ -28,13 +30,34 @@
         </div>
         <div class="middle-panel">
             <!-- Original name of add.php should be dodaj.php -->
-            <form action="add.php" method="post"></form>
+            <form action="add.php" method="post">
+                <span>
+                    <label for="title">Tytuł: </label>
+                    <input type="text" name="title" id="title">
+                </span>
+                <span>
+                    <label for="genre">Gatunek filmu:</label>
+                    <input type="number" name="genre" id="genre">
+                </span>
+                <span>
+                    <label for="year">Rok produkcji: </label>
+                    <input type="number" name="year" id="year">
+                </span>
+                <span>
+                    <label for="rating">Ocena: </label>
+                    <input type="number" name="rating" id="rating">
+                </span>
+                <span>
+                    <input type="reset" value="CZYŚĆ">
+                    <input type="submit" value="DODAJ">
+                </span>
+            </form>
         </div>
         <div class="bottom-panel">
-
+            <img src="./media/frame.jpg" alt="zdjęcia filmowe">
         </div>
         <footer>
-
+            <p>Autor strony: 22222222222</p>
         </footer>
     </body>
 </html>
